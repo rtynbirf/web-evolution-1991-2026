@@ -1,0 +1,157 @@
+/* ── Общие секции ── */
+.section{padding:80px 0}
+@media(min-width:640px){.section{padding:96px 0}}
+.section.tinted{background:color-mix(in oklab,var(--fg) 4%,transparent);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.sec-head{max-width:672px;margin:0 auto 48px;text-align:center}
+.kicker{font-family:'JetBrains Mono Var';font-size:0.75rem;text-transform:uppercase;letter-spacing:.3em;color:var(--primary);margin:0}
+.sec-head h2{margin-top:12px;font-size:clamp(28px,4vw,36px);font-weight:700;letter-spacing:-.02em}
+.sec-head p{margin:16px auto 0;color:var(--muted-fg);font-size:0.9rem;max-width:42rem}
+@media(min-width:640px){.sec-head p{font-size:1rem}}
+/* ── Машина времени: радио-вкладки (без JS) ── */
+.tm{position:relative}
+.tm > input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.tm-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;border:1px solid var(--border);background:color-mix(in oklab,var(--fg) 4%,transparent);border-radius:16px;padding:6px}
+.tm-tab{flex:1 1 auto;min-width:84px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:6px;border-radius:12px;padding:8px 12px;font-size:0.75rem;color:var(--muted-fg);cursor:pointer;user-select:none;white-space:nowrap}
+@media(min-width:640px){.tm-tab{font-size:0.875rem}}
+.tm-tab b{font-family:'JetBrains Mono Var';font-weight:700}
+.tm-tab em{font-style:normal;display:none}
+@media(min-width:1024px){.tm-tab em{display:inline}}
+.tm-panel{display:none}
+#e1991:checked ~ .tm-tabs [for=e1991],
+#e1996:checked ~ .tm-tabs [for=e1996],
+#e2005:checked ~ .tm-tabs [for=e2005],
+#e2013:checked ~ .tm-tabs [for=e2013],
+#e2026:checked ~ .tm-tabs [for=e2026]{background:var(--primary);color:var(--pf)}
+#e1991:focus-visible ~ .tm-tabs [for=e1991],
+#e1996:focus-visible ~ .tm-tabs [for=e1996],
+#e2005:focus-visible ~ .tm-tabs [for=e2005],
+#e2013:focus-visible ~ .tm-tabs [for=e2013],
+#e2026:focus-visible ~ .tm-tabs [for=e2026]{outline:2px solid var(--ring);outline-offset:2px}
+#e1991:checked ~ .tm-panels .p-1991,
+#e1996:checked ~ .tm-panels .p-1996,
+#e2005:checked ~ .tm-panels .p-2005,
+#e2013:checked ~ .tm-panels .p-2013,
+#e2026:checked ~ .tm-panels .p-2026{display:block}
+.tm-panels{margin-top:24px}
+.frame{border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 25px 50px -12px rgb(0 0 0 / .25)}
+.frame-bar{display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border);background:color-mix(in oklab,var(--fg) 5%,transparent);padding:10px 16px}
+.frame-dots{display:flex;gap:6px}
+.frame-dots i{width:12px;height:12px;border-radius:50%}
+.frame-dots i:nth-child(1){background:rgb(248 113 113)}
+.frame-dots i:nth-child(2){background:rgb(250 204 21)}
+.frame-dots i:nth-child(3){background:rgb(74 222 128)}
+.frame-addr{margin:0 auto;display:flex;align-items:center;gap:6px;max-width:320px;border:1px solid var(--border);border-radius:6px;background:color-mix(in oklab,var(--bg) 70%,transparent);padding:4px 12px;font-family:'JetBrains Mono Var';font-size:0.625rem;color:var(--muted-fg)}
+.era-screen{height:440px;overflow-y:auto}
+@media(min-width:640px){.era-screen{height:480px}}
+.era-desc{max-width:768px;margin:24px auto 0;border:1px solid var(--border);border-radius:16px;padding:20px;background:color-mix(in oklab,var(--card) 62%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.era-desc b{display:block;font-family:'Unbounded Var';font-size:0.875rem;font-weight:600;color:var(--primary)}
+.era-desc p{margin-top:8px;font-size:0.875rem;line-height:1.65;color:var(--muted-fg)}
+/* ── Эпоха 1991 ── */
+.era91{background:#fff;color:#000;font-family:'Times New Roman',Times,serif;padding:32px;line-height:1.35;font-size:1rem}
+.era91 h1{font-family:inherit;font-size:24px;font-weight:700;margin-bottom:4px}
+.era91 .meta{color:#757575;font-size:0.75rem;margin-bottom:24px}
+.era91 hr{border:0;border-top:1px solid #000;margin:16px 0}
+.era91 p{margin-bottom:12px}
+.era91 ul{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:4px}
+.era91 a{color:#0000EE;text-decoration:underline}
+.era91 a:visited{color:#551A8B}
+.era91 .fin{font-size:0.875rem}
+/* ── Эпоха 1996 ── */
+.era96{font-family:'Times New Roman',Times,serif;padding:24px;background-color:#ffffcc;background-image:repeating-linear-gradient(45deg,#ffffcc 0 12px,#ffffdd 12px 24px)}
+.era96-box{max-width:448px;margin:0 auto;border:6px double #0f766e;background:#fff;box-shadow:6px 6px 0 0 rgba(0,0,0,.35)}
+.era96-head{background:#0f766e;padding:12px;text-align:center}
+.era96-head h1{font-family:inherit;font-size:24px;font-weight:700;color:#fef08a;margin:0}
+.era96-head p{margin-top:4px;font-size:0.75rem;color:#ccfbf1}
+table.era96-t{width:100%;border-collapse:collapse;text-align:center;font-size:0.875rem}
+table.era96-t td{border:2px solid #0f766e;padding:12px;vertical-align:top}
+td.era96-news{width:33%;background:#cffafe}
+td.era96-news b{color:#b91c1c;text-decoration:underline;display:block}
+td.era96-news p{margin-top:8px;font-size:0.75rem}
+td.era96-main{background:#fff}
+td.era96-main .navy{color:#1e3a5f;font-weight:700}
+td.era96-main p{margin-top:8px;font-size:0.75rem;text-align:left}
+.counter{display:inline-block;background:#000;color:#a3e635;font-family:ui-monospace,monospace;font-size:0.625rem;padding:4px 8px;margin-top:12px}
+@media (prefers-reduced-motion: no-preference){.blink{animation:blink-soft 2.4s ease-in-out infinite}}
+@keyframes blink-soft{50%{opacity:.55}}
+.era96-marq{background:#000;color:#a3e635;text-align:center;font-size:0.75rem;font-weight:700;padding:4px 0;white-space:nowrap;overflow:hidden;border-top:2px solid #0f766e}
+.era96-foot{background:#fef9c3;font-size:0.625rem;text-align:center;padding:8px;margin:0}
+/* ── Эпоха 2005 ── */
+.era05{background:#e9e6df;font-family:Arial,Helvetica,sans-serif;padding:24px}
+.era05-wrap{max-width:512px;margin:0 auto}
+.era05-hd{position:relative;border-radius:12px 12px 0 0;background:linear-gradient(to bottom,#7c4a1e,#5b3413);padding:16px;box-shadow:0 10px 15px -3px rgb(0 0 0 / .2)}
+.era05-hd::before{content:"";position:absolute;left:0;right:0;top:0;height:50%;border-radius:12px 12px 0 0;background:linear-gradient(to bottom,rgba(255,255,255,.25),transparent)}
+.era05-hd-row{position:relative;display:flex;align-items:center;justify-content:space-between}
+.era05-title{color:#fff;font-size:1.125rem;font-weight:700;text-shadow:0 1px 2px rgb(0 0 0 / .4)}
+.era05-beta{background:#ff8c00;color:#fff;font-size:0.625rem;font-weight:700;border-radius:999px;padding:2px 8px;box-shadow:0 1px 3px rgb(0 0 0 / .3)}
+.era05-bd{background:#fff;border:1px solid #c9c2b4;border-top:0;border-radius:0 0 12px 12px;padding:16px;box-shadow:0 10px 15px -3px rgb(0 0 0 / .2)}
+.era05-stars{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:16px}
+.era05-stars .st{color:#f5a623;font-size:1.125rem;letter-spacing:2px}
+.era05-stars small{color:#737373;font-size:0.75rem}
+.era05-card{max-width:240px;margin:0 auto 16px;background:linear-gradient(to bottom,#faf8f4,#ece7dc);border:1px solid #d4cfc4;border-radius:8px;padding:16px;text-align:center;box-shadow:inset 0 2px 4px rgb(0 0 0 / .06)}
+.era05-cup{font-size:36px;line-height:1;color:#8a5a2b}
+.era05-card b{display:block;margin-top:8px;color:#5b3413;font-size:0.875rem}
+.era05-card small{display:block;margin-top:4px;color:#737373;font-size:0.75rem}
+.era05-btns{display:flex;justify-content:center;gap:12px}
+.era05-btn{border:0;border-radius:999px;background:linear-gradient(to bottom,#ffb347,#e08a00);color:#fff;font-weight:700;font-size:0.75rem;padding:7px 20px;cursor:pointer;box-shadow:0 2px 4px rgb(0 0 0 / .3),inset 0 1px 0 rgba(255,255,255,.6)}
+.era05-btn:active{transform:translateY(1px)}
+.era05-btn.ghost{background:linear-gradient(to bottom,#fff,#e8e4da);color:#5b3413;border:1px solid #c9c2b4;box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
+.era05-c{margin-top:16px;text-align:center;font-size:0.625rem;color:#a3a3a3}
+/* ── Эпоха 2013 ── */
+.era13{background:#f5f5f5;font-family:'Segoe UI',Roboto,Helvetica,sans-serif;padding:24px;color:#333}
+.era13-wrap{max-width:512px;margin:0 auto}
+.era13-kicker{font-size:0.6875rem;font-weight:300;text-transform:uppercase;letter-spacing:.3em;color:#a3a3a3;margin-bottom:4px}
+.era13 h1{font-family:inherit;font-size:30px;font-weight:200;text-transform:uppercase;letter-spacing:.04em;color:#333;margin-bottom:24px}
+.era13-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tile{height:96px;display:flex;align-items:flex-end;padding:12px;color:#fff;font-size:0.875rem;font-weight:300;text-transform:uppercase;letter-spacing:.08em;cursor:pointer}
+.tile:hover{filter:brightness(1.1)}
+.tile:active{transform:scale(.98)}
+.tile.red{background:#d9534f}.tile.green{background:#5cb85c}.tile.amber{background:#f0ad4e}.tile.cyan{background:#46b8da}
+.era13-kpi{display:flex;align-items:center;gap:16px;background:#222;color:#fff;padding:16px;margin-top:8px}
+.era13-kpi .num{font-size:24px;font-weight:300;flex:1}
+.era13-kpi .cap{font-size:0.6875rem;text-transform:uppercase;letter-spacing:.1em;color:#a3a3a3}
+.era13-bars{display:flex;align-items:flex-end;gap:4px;height:48px}
+.era13-bars i{width:10px;background:#46b8da}
+.era13-c{margin-top:16px;text-align:center;font-size:0.625rem;text-transform:uppercase;letter-spacing:.25em;color:#a3a3a3}
+/* ── Эпоха 2026 ── */
+.era26{position:relative;background:#09090b;color:#f4f4f5;padding:24px}
+.era26 .mb{position:absolute;border-radius:50%;filter:blur(40px);pointer-events:none}
+.era26 .mb1{left:-40px;top:-40px;width:192px;height:192px;background:rgb(245 158 11 / .25)}
+.era26 .mb2{right:0;top:80px;width:160px;height:160px;background:rgb(244 63 94 / .15)}
+.era26 .mb3{bottom:0;left:25%;width:160px;height:160px;background:rgb(16 185 129 / .1)}
+.era26-wrap{position:relative;max-width:512px;margin:0 auto}
+.era26-nav{display:flex;align-items:center;justify-content:space-between;border:1px solid rgb(255 255 255 / .1);background:rgb(255 255 255 / .05);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-radius:16px;padding:10px 16px;margin-bottom:16px}
+.era26-nav b{font-family:'Unbounded Var';font-size:0.75rem;font-weight:600}
+.era26-nav span{font-size:0.625rem;color:#a1a1aa}
+.era26-nav .in{background:#fbbf24;color:#0c0a09;font-weight:600;border-radius:999px;padding:2px 8px;font-size:0.625rem}
+.era26 h1{font-size:24px;font-weight:700;line-height:1.25;margin-bottom:4px}
+.era26 h1 .g{background:linear-gradient(90deg,#fcd34d,#fb923c,#fb7185);-webkit-background-clip:text;background-clip:text;color:transparent}
+.era26-sub{font-size:0.75rem;line-height:1.6;color:#a1a1aa;margin-bottom:16px}
+.era26-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.b26{border:1px solid rgb(255 255 255 / .1);background:rgb(255 255 255 / .05);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-radius:16px;padding:16px;transition:transform .15s}
+.b26:hover{transform:translateY(-2px)}
+.b26.full{grid-column:span 2}
+.b26 .cap{font-size:0.625rem;text-transform:uppercase;letter-spacing:.2em;color:rgb(252 211 77 / .9)}
+.b26 .big{font-family:'Unbounded Var';font-size:1.125rem;font-weight:600;margin-top:4px}
+.b26 small{display:block;margin-top:4px;font-size:0.625rem;color:#a1a1aa}
+.b26 .num{font-family:'JetBrains Mono Var';font-size:20px;font-weight:700;color:#fcd34d}
+.b26.cta{display:flex;align-items:center;justify-content:space-between;gap:12px;border-color:rgb(252 211 77 / .2);background:linear-gradient(90deg,rgb(251 191 36 / .15),rgb(251 113 133 / .1))}
+.b26.cta b{font-size:0.875rem;font-weight:600;display:block}
+.b26.cta small{color:#a1a1aa}
+.b26.cta .go{background:#fbbf24;color:#0c0a09;font-weight:700;font-size:0.75rem;border-radius:999px;padding:8px 16px;box-shadow:0 10px 15px -3px rgb(251 191 36 / .25)}
+.b26 .ai{color:#fcd34d}
+/* ── Таймлайн ── */
+.tl{max-width:896px}
+.tl-list{list-style:none;margin:0;padding:0 0 0 24px;border-left:1px solid var(--border);display:grid;gap:40px;position:relative}
+@media(min-width:640px){.tl-list{padding-left:40px}}
+.tl-item{position:relative}
+.tl-dot{position:absolute;top:6px;width:12px;height:12px;border-radius:50%;border:2px solid var(--primary);background:var(--bg);left:calc(-24px - 7px)}
+@media(min-width:640px){.tl-dot{left:calc(-40px - 7px)}}
+.tl-card{border:1px solid var(--border);border-radius:16px;padding:20px 24px;background:color-mix(in oklab,var(--card) 62%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.tl-card:hover{border-color:color-mix(in oklab,var(--primary) 40%,transparent)}
+.tl-card .row{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.tl-card .period{font-family:'JetBrains Mono Var';font-size:0.875rem;font-weight:700;color:var(--primary);margin:0}
+.tl-card h3{font-size:1.125rem;font-weight:600;letter-spacing:-.01em}
+.tl-card p{margin-top:12px;font-size:0.875rem;line-height:1.65;color:var(--muted-fg)}
+.tl-tags{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}
+.tl-tags li{border:1px solid var(--border);background:color-mix(in oklab,var(--fg) 4%,transparent);border-radius:999px;font-family:'JetBrains Mono Var';font-size:0.6875rem;padding:2px 10px;color:var(--muted-fg)}
+.tl-card:hover .tl-tags li{border-color:color-mix(in oklab,var(--primary) 30%,transparent);color:var(--fg)}

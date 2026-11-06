@@ -1,0 +1,117 @@
+/* ── Бенто-карточки ── */
+.bento{display:grid;gap:16px}
+@media(min-width:768px){.bento{grid-template-columns:repeat(3,1fr)}.bento .span2{grid-column:span 2}}
+.card{border:1px solid var(--border);border-radius:24px;padding:24px;background:color-mix(in oklab,var(--card) 62%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:transform .2s,border-color .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);border-color:color-mix(in oklab,var(--primary) 40%,transparent);box-shadow:0 20px 40px -20px color-mix(in oklab,var(--primary) 20%,transparent)}
+.card h3{font-size:1rem;font-weight:600;letter-spacing:-.01em;margin:16px 0 8px}
+.card p{font-size:0.875rem;line-height:1.65;color:var(--muted-fg)}
+.icon-chip{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;background:color-mix(in oklab,var(--primary) 12%,transparent);color:var(--primary);font-family:'JetBrains Mono Var';font-size:0.8125rem;font-weight:700}
+.card:hover .icon-chip{transform:scale(1.1)}
+.stack-note{display:flex;align-items:center;justify-content:center;gap:8px;max-width:42rem;margin:40px auto 0;font-size:0.75rem;color:var(--muted-fg);text-align:center}
+.stack-note .k{font-family:'JetBrains Mono Var';color:var(--primary)}
+/* ── Здоровье ── */
+.hf-grid{display:grid;gap:16px}
+@media(min-width:768px){.hf-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.hf-grid{grid-template-columns:repeat(3,1fr)}}
+.facts{margin:16px 0 0;background:color-mix(in oklab,var(--fg) 4%,transparent);border:1px solid var(--border);border-radius:16px;padding:14px;display:grid;gap:8px}
+.facts div{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:0.75rem}
+.facts dt{color:var(--muted-fg)}
+.facts dd{margin:0;text-align:right}
+.facts dd b{display:block;font-family:'JetBrains Mono Var';font-size:0.75rem;font-weight:700;color:var(--primary)}
+.facts dd small{display:block;font-size:0.6875rem;line-height:1.3;color:var(--muted-fg)}
+.center-cta{display:flex;justify-content:center;margin-top:24px}
+.hf-note{max-width:42rem;margin:40px auto 0;font-size:0.75rem;line-height:1.6;color:var(--muted-fg);text-align:center}
+.link-back{display:flex;justify-content:center;margin-top:24px}
+.link-back a{color:var(--primary);font-size:0.875rem;font-weight:500;text-decoration:none}
+.link-back a:hover{text-decoration:underline}
+/* ── Автономность ── */
+.checklist{max-width:42rem;margin:40px auto 0;border:1px solid color-mix(in oklab,var(--primary) 25%,transparent);background:color-mix(in oklab,var(--primary) 5%,transparent);border-radius:24px;padding:32px}
+.checklist h3{display:flex;align-items:center;gap:10px;font-size:1rem;font-weight:600}
+.checklist h3 .k{color:var(--primary)}
+.checklist ol{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}
+.checklist li{display:flex;align-items:flex-start;gap:12px;font-size:0.875rem;line-height:1.6}
+.checklist .n{flex:0 0 24px;height:24px;border-radius:50%;background:color-mix(in oklab,var(--primary) 15%,transparent);color:var(--primary);font-family:'JetBrains Mono Var';font-size:0.75rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.checklist .hint{margin-top:16px;font-size:0.75rem;line-height:1.6;color:var(--muted-fg)}
+/* ── Глоссарий ── */
+.glossary{max-width:768px}
+.glossary details{border-bottom:1px solid var(--border);padding:4px}
+.glossary summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;cursor:pointer;font-family:'Unbounded Var';font-size:0.9375rem;font-weight:600;list-style:none}
+.glossary summary::-webkit-details-marker{display:none}
+.glossary summary::after{content:"▾";flex:0 0 auto;color:var(--muted-fg);transition:transform .2s}
+.glossary details[open] summary::after{transform:rotate(180deg)}
+.glossary summary:hover{color:var(--primary)}
+.glossary details p{padding:4px 4px 16px;font-size:0.875rem;line-height:1.65;color:var(--muted-fg)}
+/* ── Футер ── */
+.site-footer{margin-top:auto;border-top:1px solid var(--border);background:color-mix(in oklab,var(--fg) 4%,transparent);padding-bottom:env(safe-area-inset-bottom)}
+.foot-grid{display:grid;gap:40px;padding:48px 0}
+@media(min-width:768px){.foot-grid{grid-template-columns:1.2fr 1fr}}
+.foot-desc{margin-top:16px;max-width:28rem;font-size:0.875rem;line-height:1.65;color:var(--muted-fg)}
+.src-title{display:flex;align-items:center;gap:8px;font-family:'Unbounded Var';font-size:0.875rem;font-weight:600;margin:0}
+.src-list{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}
+.src-list a{font-size:0.875rem;color:var(--muted-fg);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:4px}
+.src-list a:hover{color:var(--primary);text-decoration-color:currentColor}
+.foot-bottom{border-top:1px solid var(--border)}
+.foot-bottom .in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding:20px 0;font-size:0.75rem;color:var(--muted-fg)}
+/* ── Панель комфорта ── */
+.comfort-fab{position:fixed;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));z-index:60;width:48px;height:48px;border-radius:50%;border:0;background:var(--primary);color:var(--pf);font-family:'JetBrains Mono Var';font-size:0.8125rem;font-weight:700;cursor:pointer;box-shadow:0 10px 25px -5px color-mix(in oklab,var(--primary) 45%,transparent)}
+.comfort-fab:hover{transform:translateY(-2px)}
+.comfort-panel{position:fixed;right:calc(16px + env(safe-area-inset-right));bottom:calc(76px + env(safe-area-inset-bottom));z-index:60;width:min(320px,calc(100vw - 32px));background:var(--card);border:1px solid var(--border);border-radius:20px;padding:20px;box-shadow:0 25px 50px -12px rgb(0 0 0 / .35);display:none}
+.comfort-panel.open{display:block}
+.comfort-panel h2{font-size:0.875rem;font-weight:600;margin-bottom:4px}
+.comfort-panel .sub{font-size:0.75rem;color:var(--muted-fg);margin-bottom:8px}
+.cp-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px dashed var(--border);font-size:0.875rem}
+.cp-btn{min-height:36px;border-radius:10px;border:1px solid var(--border);background:transparent;padding:0 12px;font-family:'JetBrains Mono Var';font-size:0.75rem;cursor:pointer}
+.cp-btn[aria-pressed="true"]{background:var(--primary);color:var(--pf);border-color:transparent}
+.cp-reset{margin-top:12px;width:100%;min-height:40px;border-radius:10px;border:1px solid var(--border);background:color-mix(in oklab,var(--fg) 5%,transparent);cursor:pointer;font-size:0.8125rem}
+/* ── Шрифт чтения: Golos Text (панель комфорта) ── */
+html[data-font="legible"] body{font-family:'Golos Text Var','Manrope Var',system-ui,sans-serif}
+/* ── v5: Живой паспорт страницы ── */
+.passport{max-width:672px;margin:56px auto 0;border:1px dashed color-mix(in oklab,var(--primary) 45%,transparent);border-radius:16px;padding:18px 20px;background:color-mix(in oklab,var(--card) 72%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);text-align:left}
+.passport h2{font-size:0.8125rem;font-weight:700;color:var(--primary);letter-spacing:.02em}
+.passport .pp-sub{font-size:0.75rem;color:var(--muted-fg);margin-top:3px;line-height:1.5}
+.passport ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:7px}
+@media(min-width:640px){.passport ul{grid-template-columns:1fr 1fr;gap:7px 20px}}
+.passport li{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:0.78125rem;color:var(--muted-fg);border-top:1px dashed var(--border);padding-top:7px}
+.passport li small{display:block;font-size:0.6875rem;color:var(--muted-fg);opacity:.75}
+.passport output{font-family:'JetBrains Mono Var';font-weight:700;font-size:0.78125rem;color:var(--fg);font-variant-numeric:tabular-nums;white-space:nowrap}
+.passport output[data-ok="1"]{color:#059669}
+.passport output[data-ok="0"]{color:#dc2626}
+html.dark .passport output[data-ok="1"]{color:#34d399}
+html.dark .passport output[data-ok="0"]{color:#f87171}
+/* ── v5: Эко-режим (декорация гаснет, содержание остаётся) ── */
+html[data-eco="on"] .glass,html[data-eco="on"] .glass-strong,html[data-eco="on"] .stat,html[data-eco="on"] .card,html[data-eco="on"] .tl-card,html[data-eco="on"] .era-desc,html[data-eco="on"] .era26-nav,html[data-eco="on"] .b26,html[data-eco="on"] .btn-ghost,html[data-eco="on"] .to-top{background:var(--card);backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+html[data-eco="on"] .blob,html[data-eco="on"] .era26 .mb{display:none}
+html[data-eco="on"] *{box-shadow:none!important;text-shadow:none!important}
+html[data-eco="on"] .grad-text{color:var(--primary)!important;background-image:none!important}
+html[data-eco="on"] .stat:hover,html[data-eco="on"] .card:hover,html[data-eco="on"] .btn-primary:hover{transform:none}
+/* ── v5: Вечерний и ночной сдвиг палитры (по часам устройства) ── */
+html.light[data-hour="evening"],html.light[data-hour="night"]{--bg:oklch(0.955 0.016 85);--card:oklch(0.975 0.012 85);--fg:oklch(0.235 0.02 60);--muted-fg:oklch(0.43 0.028 60);--primary:oklch(0.5 0.13 55);--ring:oklch(0.5 0.13 55);--border:oklch(0.865 0.02 80);--grad-a:oklch(0.5 0.13 55);--grad-b:oklch(0.46 0.14 40);--grad-c:oklch(0.44 0.15 25)}
+html.dark[data-hour="night"]{--bg:oklch(0.165 0.008 60);--card:oklch(0.215 0.012 60);--fg:oklch(0.93 0.012 75);--muted-fg:oklch(0.83 0.018 75);--primary:oklch(0.87 0.1 65);--ring:oklch(0.87 0.1 65);--border:rgb(255 255 255 / 12%);--grad-a:oklch(0.87 0.1 65);--grad-b:oklch(0.82 0.12 45);--grad-c:oklch(0.81 0.13 25)}
+/* ── v5: Кнопка «наверх» и активный пункт навигации ── */
+.to-top{position:fixed;left:calc(16px + env(safe-area-inset-left));bottom:calc(16px + env(safe-area-inset-bottom));z-index:60;width:48px;height:48px;border-radius:50%;border:1px solid var(--border);background:color-mix(in oklab,var(--card) 82%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);color:var(--fg);font-size:20px;line-height:1;cursor:pointer;display:none}
+.to-top.show{display:block}
+.to-top:hover{border-color:var(--primary);color:var(--primary)}
+.main-nav a[aria-current="true"]{background:color-mix(in oklab,var(--fg) 6%,transparent);color:var(--fg)}
+/* ── v5: Печать ── */
+@media print{
+  .site-header,.comfort-fab,.comfort-panel,.to-top,.marquee,.mesh,.chip-float,.era26 .mb,.center-cta,.cta-row{display:none!important}
+  body{background:#fff;color:#000}
+  .card,.tl-card,.era-desc,.stat,.passport,.frame,.era-desc{border-color:#bbb!important;box-shadow:none!important;background:#fff!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+  .grad-text{color:#000!important;background:none!important;-webkit-text-fill-color:#000}
+  .reveal{opacity:1!important;transform:none!important}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:9px;color:#555}
+  .section{padding:24px 0}
+  .era-screen{height:auto;overflow:visible}
+}
+/* ── Появление при скролле ── */
+html.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
+html.js .reveal.in{opacity:1;transform:none}
+html[data-motion="off"] .reveal,html[data-motion="off"] *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  html.js .reveal{opacity:1;transform:none;transition:none}
+  .mq-track,.grad-text,.blob,.chip-a,.chip-b,.blink{animation:none!important}
+  *{transition-duration:.01ms!important}
+}
+</style>
+</head>

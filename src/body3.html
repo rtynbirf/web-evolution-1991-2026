@@ -1,0 +1,107 @@
+  <!-- ═══ АВТОНОМНОСТЬ ═══ -->
+  <section class="section" id="offline" aria-label="Автономность: офлайн, приватность, самодостаточность">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="kicker">offline-first · self-hosted · private</p>
+        <h2>Автономен по построению</h2>
+        <p>Вы читаете один HTML-файл — самую чистую форму автономности, какая вообще возможна в вебе. Шрифты зашиты внутрь, стили и скрипты внутри, сервер не нужен, сеть не нужна. Скопируйте файл на флешку, отправьте в мессенджере, положите в архив — он везде останется ровно таким же.</p>
+      </div>
+      <div class="hf-grid">
+        <article class="card reveal"><span class="icon-chip" aria-hidden="true">01</span><h3>Один файл — ноль зависимостей</h3>
+          <p>HTML, CSS, JavaScript, четыре шрифта и иконка — всё в одном документе размером меньше средней фотографии из телефона. Двойной клик — и файл работает: авиарежим, метро, самолёт, компьютер без интернета. Сеть — приятный бонус, а не условие выживания.</p></article>
+        <article class="card reveal"><span class="icon-chip" aria-hidden="true">02</span><h3>Шрифты зашиты внутрь</h3>
+          <p>Четыре переменные гарнитуры — Unbounded, Manrope, JetBrains Mono, Golos Text — упакованы в woff2 и встроены в файл кодировкой base64. Ноль обращений к fonts.googleapis.com: макет не развалится, даже если Google завтра выключит свой CDN.</p></article>
+        <article class="card reveal"><span class="icon-chip" aria-hidden="true">03</span><h3>Автономность = приватность</h3>
+          <p>Мюнхенский суд, январь 2022: штраф сайту за динамическую загрузку Google Fonts — IP-адрес посетителя утекал к Google без согласия (нарушение GDPR). Здесь утечка невозможна физически: файл не отправляет ни одного запроса — нечем следить и не за чем.</p></article>
+        <article class="card reveal"><span class="icon-chip" aria-hidden="true">04</span><h3>Живёт на любом железе</h3>
+          <p>macOS, Windows, Linux, iOS, Android, HarmonyOS, ChromeOS — любой браузер последних двух десятилетий откроет файл одинаково. Термин Progressive Web App придуман в июне 2015 года Алексом Расселлом и Фрэнсис Берриман: «прогрессивный» — значит базовое работает везде. Один файл доводит эту идею до предела.</p></article>
+        <article class="card reveal"><span class="icon-chip" aria-hidden="true">05</span><h3>Проверено историей</h3>
+          <p>Первый сайт мира был именно таким — статичным файлом на сервере CERN, и он до сих пор открывается. Service Worker (полная поддержка с Chrome 45, сентябрь 2015) научил сайты кэшировать себя на устройство — этот файл не нуждается даже в кэше: он сам себе кэш.</p></article>
+        <article class="card reveal"><span class="icon-chip" aria-hidden="true">06</span><h3>Настройки не улетают</h3>
+          <p>Панель комфорта — размер кегля, движение, контраст, тема — хранит выбор в localStorage устройства. Ни аккаунта, ни облака, ни куки: включили один раз — работает всегда, в том числе в полной офлайн-изоляции.</p></article>
+      </div>
+      <div class="checklist reveal">
+        <h3><span class="k">✓</span> Проверка на честность: 15 секунд</h3>
+        <ol>
+          <li><span class="n">1</span>Скопируйте этот файл на флешку или другое устройство</li>
+          <li><span class="n">2</span>Отключите интернет целиком — Wi-Fi, кабель, всё</li>
+          <li><span class="n">3</span>Двойной клик по файлу — страница откроется во всей красе</li>
+        </ol>
+        <p class="hint">Файл можно открыть и на телефоне (любым файловым менеджером) — все вкладки, темы и панель комфорта работают на сенсорном экране.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ГЛОССАРИЙ ═══ -->
+  <section class="section tinted" id="glossary" aria-label="Словарь терминов">
+    <div class="container glossary">
+      <div class="sec-head reveal">
+        <p class="kicker">словарь</p>
+        <h2>Десять слов, из которых собран файл</h2>
+        <p>Каждый термин из разделов выше — раскрытый, с датой и источником. Шаблон рассчитан на то, что его будут читать, а не только смотреть.</p>
+      </div>
+      <details class="reveal"><summary>Глассморфизм</summary><p>Полупрозрачные поверхности с размытием того, что за ними (CSS backdrop-filter). Приём существовал в вебе давно, но легитимным его сделали системные размытия macOS Big Sur и Windows 11: стекло перестало быть украшением и стало способом иерархии. Здесь стеклянные карточки, шапка при прокрутке и панель комфорта; в режиме высокого контраста стекло честно заменяется плотным фоном — читаемость выше трендов.</p></details>
+      <details class="reveal"><summary>Бенто-сетка</summary><p>Модульная сетка из плиток разного размера, как коробка японского ланча: крупный блок — главное, мелкие — детали. Популяризировала Apple в презентациях и на apple.com (2022–2023), и с тех пор приём стал стандартом информационно плотных страниц. Секции «ДНК», «Здоровье» и «Автономность» собраны именно так: у каждого блока своя роль, ни один не дублирует другой.</p></details>
+      <details class="reveal"><summary>OKLCH</summary><p>Цветовое пространство, где L — воспринимаемая светлота, C — насыщенность, H — тон. В отличие от HEX, число L честно отражает, насколько ярким цвет видит глаз: поэтому палитра задана в oklch(), и контраст просчитывается до того, как оттенок попадёт на страницу. Все современные браузеры поддерживают синтаксис с 2023 года.</p></details>
+      <details class="reveal"><summary>WCAG 2.2</summary><p>Рекомендация W3C по доступности веб-контента, статус Recommendation — 5 октября 2023 года. Контраст текста — минимум 4.5:1 (крупного — 3:1), мигание — не чаще 3 вспышек в секунду, минимальный размер тач-цели — 24×24 px, фокус с клавиатуры всегда виден. Эти нормы здесь не лозунг, а исходные данные: палитра и анимации проверены скриптом.</p></details>
+      <details class="reveal"><summary>APCA</summary><p>Advanced Perceptual Contrast Algorithm — перцептивный алгоритм контраста, кандидат в основу WCAG 3. Вместо отношения яркостей даёт значение Lc (0–108), учитывая размер шрифта, вес и фон. Практика показала: пара может проходить WCAG 2.2 и всё равно быть плохо читаемой — у тёмного серого на графите в первой версии этого сайта было Lc 43.8 при формально «зелёном» 7.3:1. Теперь весь текст держит Lc ≥ 75 в обеих темах.</p></details>
+      <details class="reveal"><summary>Переменный шрифт</summary><p>OpenType Font Variations (сентябрь 2016, консорциум с участием Google, Apple и Microsoft): один файл содержит непрерывные оси — вес, ширина, наклон. Заголовки, текст и моноширинные фрагменты здесь — четыре файла woff2, сабсетом ужатые примерно до 210 КБ (кириллица, латиница, цифры, стрелки), и из них берутся все промежуточные начертания от тонкого до жирного. Раньше каждому весу соответствовал отдельный файл.</p></details>
+      <details class="reveal"><summary>Service Worker и PWA</summary><p>Service Worker — скрипт-прокси между страницей и сетью, позволяющий перехватывать запросы и отвечать из кэша; полную поддержку первым получил Chrome 45 (сентябрь 2015). Термин Progressive Web App придумали Алекс Расселл и Фрэнсис Берриман в июне 2015-го: сайт, который «прогрессивно» ведёт себя как приложение — офлайн, на домашнем экране, с иконками. Этот файл идёт дальше: ему не нужен даже кэш — он сам себе автономия.</p></details>
+      <details class="reveal"><summary>prefers-reduced-motion</summary><p>Системная настройка «меньше движения» (CSS-медиазапрос). Люди с вестибулярными нарушениями реагируют на параллакс и скролл-анимации тошнотой и головокружением — об этом прямо предупреждают MDN и web.dev. Здесь настройка убивает бегущую строку, парение чипов, дрейф mesh-фона и кинетический градиент; дублёр — кнопка «Меньше движения» в панели комфорта.</p></details>
+      <details class="reveal"><summary>Кинетическая типографика</summary><p>Текст, который движется: анимированный градиент в заголовке, «дыхание» букв, скролл-эффекты. Тренд 2024–2026 годов, вернувшийся вместе с мощными мобильными GPU. Правило этого файла: движение — только если оно не мешает читать и отключается одним переключателем; статичная версия остаётся полной.</p></details>
+      <details class="reveal"><summary>Тёмный паттерн</summary><p>Интерфейсный обман: скрытые подписки, ложная срочность, кнопки-ловушки, согласие по умолчанию. Документ, проповедующий здоровье пользователя, обязан их избегать: здесь нет куки-баннеров (потому что нет куки), нет всплывающих окон, нет таймеров «последний шанс», а панель комфорта можно открыть и закрыть без последствий — она просто помнит выбор.</p></details>
+    </div>
+  </section>
+</main>
+
+<!-- ═══ ФУТЕР ═══ -->
+<footer class="site-footer" id="sources" aria-label="Источники и подвал">
+  <div class="container foot-grid">
+    <div>
+      <div class="logo"><span class="logo-badge">ЭВ</span><span class="logo-name">эволюция веба <span class="logo-year mono">1991→2026</span></span></div>
+      <p class="foot-desc">Универсальный шаблон, собранный на трендах, которые прошли проверку временем: семантика первого веба, адаптивность 2010-х, стекло и кинетика 2020-х. Автономен до конца: один HTML-файл, шрифты внутри, ноль внешних запросов. Открыт к любому контенту и безразличен к железу.</p>
+    </div>
+    <nav aria-label="Список источников">
+      <h2 class="src-title"><span aria-hidden="true">📖</span> Источники фактов</h2>
+      <ul class="src-list">
+        <li><a href="https://info.cern.ch" target="_blank" rel="noopener noreferrer">info.cern.ch — первая страница (CERN)</a></li>
+        <li><a href="https://home.cern/science/computing/the-birth-of-the-web" target="_blank" rel="noopener noreferrer">CERN — The birth of the Web</a></li>
+        <li><a href="https://alistapart.com/article/responsive-web-design/" target="_blank" rel="noopener noreferrer">Ethan Marcotte — Responsive Web Design (25.05.2010)</a></li>
+        <li><a href="https://www.webdesignmuseum.org/web-design-history" target="_blank" rel="noopener noreferrer">Web Design Museum — таймлайн 1990→</a></li>
+        <li><a href="https://opensource.googleblog.com/2016/09/introducing-opentype-font-variations.html" target="_blank" rel="noopener noreferrer">Google — OpenType Font Variations (09.2016)</a></li>
+        <li><a href="https://webkit.org/blog/7051/variable-fonts-on-the-web/" target="_blank" rel="noopener noreferrer">WebKit — Variable Fonts on the Web</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="noopener noreferrer">W3C — WCAG 2.2: контраст, вспышки, анимации</a></li>
+        <li><a href="https://web.dev/articles/prefers-reduced-motion" target="_blank" rel="noopener noreferrer">web.dev — prefers-reduced-motion и вестибулярные нарушения</a></li>
+        <li><a href="https://baymard.com/blog/line-length-readability" target="_blank" rel="noopener noreferrer">Baymard Institute — оптимальная длина строки</a></li>
+        <li><a href="https://git.apcacontrast.com/documentation/APCA_easyIntro" target="_blank" rel="noopener noreferrer">APCA — перцептивный контраст (черновик WCAG 3)</a></li>
+        <li><a href="https://www.itu.int/en/ITU-D/Statistics/Pages/facts/default.aspx" target="_blank" rel="noopener noreferrer">ITU — Facts and Figures 2025: 5,8 млрд онлайн</a></li>
+        <li><a href="https://chromeos.dev/en/posts/pwas-past-present-future" target="_blank" rel="noopener noreferrer">chromeOS.dev — PWA: Chrome 45 и Service Worker (09.2015)</a></li>
+        <li><a href="https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/" target="_blank" rel="noopener noreferrer">Alex Russell — термин Progressive Web App (15.06.2015)</a></li>
+        <li><a href="https://www.theregister.com/offbeat/2022/01/31/google_fonts_lands_website_privacy_fine_by_german_court/" target="_blank" rel="noopener noreferrer">The Register — суд Мюнхена: Google Fonts и GDPR (01.2022)</a></li>
+        <li><a href="https://developer.mozilla.org/docs/Web/API/Service_Worker_API" target="_blank" rel="noopener noreferrer">MDN — Service Worker API: кэш и офлайн</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="foot-bottom">
+    <div class="container in">
+      <span>© 2026 · Сконструировано по трендам трёх десятилетий</span>
+      <span>Один файл. Ноль запросов. Режим антигаллюцинации включён ✓</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ ПАНЕЛЬ КОМФОРТА ═══ -->
+<button class="comfort-fab" id="comfortFab" type="button" aria-expanded="false" aria-controls="comfortPanel" aria-label="Панель комфорта">Aa</button>
+<button class="to-top" id="toTop" type="button" aria-label="Наверх">↑</button>
+<div class="comfort-panel" id="comfortPanel" role="dialog" aria-label="Панель комфорта">
+  <h2>Панель комфорта</h2>
+  <p class="sub">Настройки сохраняются в этом браузере</p>
+  <div class="cp-row"><span>Размер текста</span><button class="cp-btn" id="fsBtn" type="button">100%</button></div>
+  <div class="cp-row"><span>Меньше движения</span><button class="cp-btn" id="motionBtn" type="button" aria-pressed="false">Выкл</button></div>
+  <div class="cp-row"><span>Высокий контраст</span><button class="cp-btn" id="contrastBtn" type="button" aria-pressed="false">Выкл</button></div>
+  <div class="cp-row"><span>Эко-режим (гасит декор)</span><button class="cp-btn" id="ecoBtn" type="button" aria-pressed="false">Выкл</button></div>
+  <div class="cp-row"><span>Шрифт чтения</span><button class="cp-btn" id="fontBtn" type="button" aria-pressed="false">Golos Text</button></div>
+  <button class="cp-reset" id="resetBtn" type="button">Сбросить настройки</button>
+</div>
+
+<script>
