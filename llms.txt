@@ -1,0 +1,34 @@
+# web-evolution-1991-2026
+> Эволюция Веба 1991→2026 — автономная HTML-экспозиция: 5 эпох, таймлайн, WCAG+APCA, один файл 267 КБ, ноль внешних запросов
+
+Автоген 2026-11-08 · источник: живой GitHub API (номера и файлы не руками) · владелец rtynbirf · ветка `main`
+
+## Мембрана
+- README.md — для человека (Эволюция Веба 1991→2026)
+- AGENTS.md — есть
+- LICENSE — CC-BY-4.0
+- topics: css, dark-theme, exhibition, exposition, html, javascript, offline-first, single-file, typography, wcag, web-history
+
+## Карта корня
+- .github/
+- .gitignore
+- AGENTS.md
+- CODEOWNERS
+- LICENSE
+- README.md
+- SECURITY.md
+- SHA256SUMS.txt
+- evolution-web-1991-2026.html
+- evolution-web-1991-2026.zip
+- fonts/
+- screenshots/
+- src/
+- tools/
+
+## CI
+- workflow: guardian-tripwire
+
+## Ссылки
+- [GitHub](https://github.com/rtynbirf/web-evolution-1991-2026)
+- [README](https://github.com/rtynbirf/web-evolution-1991-2026/blob/main/README.md)
+- [raw llms.txt](https://raw.githubusercontent.com/rtynbirf/web-evolution-1991-2026/main/llms.txt)
