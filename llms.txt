@@ -32,3 +32,4 @@
 - [GitHub](https://github.com/rtynbirf/web-evolution-1991-2026)
 - [README](https://github.com/rtynbirf/web-evolution-1991-2026/blob/main/README.md)
 - [raw llms.txt](https://raw.githubusercontent.com/rtynbirf/web-evolution-1991-2026/main/llms.txt)
+- [PULSE.md](PULSE.md): живой пульс репозитория — прогоны, пломбы, здоровье.
