@@ -2,6 +2,15 @@
   <img src="banner.png" alt="web-evolution-1991-2026 — Автономная HTML-экспозиция: 5 эпох веба" width="100%">
 </div>
 
+<!--ФОРЖ:МУЗА:НАЧАЛО-->
+<div align="center">
+  <img src="repo-muse.svg" width="100%" alt="Муза web-evolution-1991-2026: картина кузни ПОЛИМАТ, раунд 9" />
+  <br/>
+  <img src="forge-divider.svg" width="62%" alt="разделитель кузни ПОЛИМАТ" />
+</div>
+<!--ФОРЖ:МУЗА:КОНЕЦ-->
+
+
 # Эволюция Веба 1991→2026
 
 Автономная HTML-экспозиция: 35 лет веб-дизайна в одном файле.
@@ -60,3 +69,10 @@ recalcTimestamp=False)` — иначе fontTools штампует в `head.modif
 
 TH-WE-01 (ворклог: rtynbirf/H-PE11-PHOENIX, карта: rtynbirf/repo-doctrine,
 06-карта-аккаунта.md). Лицензия — CC-BY-4.0.
+
+<!--ФОРЖ:ПОДВАЛ-->
+---
+
+<div align="center">
+  <sub>◆ картина и штандарт — ручная ковка <a href="https://github.com/rtynbirf">КУЗНИ ПОЛИМАТ</a> · ЧЕЛОВЕК=АККАУНТ=PID1 ◆</sub>
+</div>
