@@ -1,18 +1,18 @@
 <div align="center">
-  <img src="banner.png" alt="web-evolution-1991-2026 — Автономная HTML-экспозиция: 5 эпох веба" width="100%">
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/web-evolution-1991-2026@main/banner.png" alt="web-evolution-1991-2026 — Автономная HTML-экспозиция: 5 эпох веба" width="100%">
 </div>
 
 <!--ФОРЖ:МУЗА:НАЧАЛО-->
 <div align="center">
-  <img src="repo-muse.svg" width="100%" alt="Муза web-evolution-1991-2026: мастерская РЕКА ВЕБА, кузня ПОЛИМАТ, раунд 12 · REVE=РЕВО" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/web-evolution-1991-2026@main/repo-muse.svg" width="100%" alt="Муза web-evolution-1991-2026: мастерская РЕКА ВЕБА, кузня ПОЛИМАТ, раунд 12 · REVE=РЕВО" />
   <br/>
-  <img src="forge-divider.svg" width="62%" alt="делитель мастерской РЕКА ВЕБА" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/web-evolution-1991-2026@main/forge-divider.svg" width="62%" alt="делитель мастерской РЕКА ВЕБА" />
 </div>
 <!--ФОРЖ:МУЗА:КОНЕЦ-->
 
 <!--ФОРЖ:ПАСПОРТ:НАЧАЛО-->
 <div align="center">
-  <img src="revo-page.svg" width="100%" alt="РЕВО-паспорт страницы web-evolution-1991-2026: строение файлов, лексикон, числа — по фактическому контенту" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/web-evolution-1991-2026@main/revo-page.svg" width="100%" alt="РЕВО-паспорт страницы web-evolution-1991-2026: строение файлов, лексикон, числа — по фактическому контенту" />
 </div>
 
 | ФАЙЛОВ | ПАПОК | КОММИТОВ | ОБНОВЛЕНО | РЕЛИЗОВ |
