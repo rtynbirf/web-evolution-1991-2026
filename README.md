@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/web-evolution-1991-2026@main/banner.png" alt="web-evolution-1991-2026 — Автономная HTML-экспозиция: 5 эпох веба" width="100%">
+
+<a href="https://github.com/rtynbirf/web-evolution-1991-2026"><img src="banner.png" width="100%" alt="web-evolution-1991-2026 — штандарт мастерской в каноне ORNAMENTAL MYTHO-REALISM"></a>
+
 </div>
 
 <!--ФОРЖ:МУЗА:НАЧАЛО-->
@@ -12,13 +14,25 @@
 
 <!--ФОРЖ:ПАСПОРТ:НАЧАЛО-->
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/web-evolution-1991-2026@main/revo-page.svg" width="100%" alt="РЕВО-паспорт страницы web-evolution-1991-2026: строение файлов, лексикон, числа — по фактическому контенту" />
+  <img src="revo-page.svg" width="100%" alt="РЕВО-паспорт страницы web-evolution-1991-2026 №60 в каноне ORNAMENTAL MYTHO-REALISM: орнаментальная решётка, медальон-миф, строение файлов, лексикон — по фактическому контенту" />
 </div>
 
 | ФАЙЛОВ | ПАПОК | КОММИТОВ | ОБНОВЛЕНО | РЕЛИЗОВ |
 |---:|---:|---:|---|---:|
-| 44 | 6 | 34 | 2026-11-16 | 1 |
+| 54 | 8 | 1 | 2026-11-28 | 1 |
 <!--ФОРЖ:ПАСПОРТ:КОНЕЦ-->
+
+# web-evolution-1991-2026
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/rtynbirf/web-evolution-1991-2026@main/.github/social-preview.png" alt="web-evolution-1991-2026" width="100%"></p>
+
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/web-evolution-1991-2026@main/banner.png" alt="web-evolution-1991-2026 — Автономная HTML-экспозиция: 5 эпох веба" width="100%">
+</div>
+
+
+
+
 
 
 
