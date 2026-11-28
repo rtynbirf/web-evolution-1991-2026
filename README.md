@@ -24,6 +24,18 @@
 
 # web-evolution-1991-2026
 
+<div align="center">
+
+<a href="https://github.com/rtynbirf/web-evolution-1991-2026"><img src="banner.png" width="100%" alt="web-evolution-1991-2026 — штандарт мастерской в каноне ORNAMENTAL MYTHO-REALISM"></a>
+
+</div>
+
+
+
+
+
+# web-evolution-1991-2026
+
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/rtynbirf/web-evolution-1991-2026@main/.github/social-preview.png" alt="web-evolution-1991-2026" width="100%"></p>
 
 <div align="center">
